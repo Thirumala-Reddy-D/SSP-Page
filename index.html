@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="stateEmblem.png.png" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>State Scholarship Portal</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header{
+            position:relative;
+            background-color:#1b76d1;
+            height:10vh;
+            display:flex;
+            width:100%;
+        }
+        .headerleft{
+            height:100%;
+            width: 50%;
+            display:flex;
+        }
+        .headercontent{
+            display:flex;
+            align-items: center;
+            margin-left:5%;
+            text-decoration:none;
+            color:rgb(248, 242, 242);
+        }
+        #sitename{
+            width:500%;
+        }
+        .logo{
+            height:90%;
+            width:20%;
+        }
+        .headerright{
+            height:100%;
+            width: 50%;
+        }
+        #language{
+            position:absolute;
+            right:6%;
+            height:50%;
+            width:7%;
+            margin-top:1.3%;
+            font-size: large;
+            font-weight: 500;
+            background-color: rgb(248, 242, 242);
+            outline:none;
+            border:transparent;
+            border-radius:2px;
+        }
+        .lofin{
+            display:flex;
+        }
+        #login{
+            font-weight: 300;
+            font-size: xxx-large;
+            color:gray;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .fa-lock{
+            font-size: xx-large;
+            color:gray;
+        }
+        main{
+            width:65%;
+            height:200%;
+            margin:2% 10% 2% 18%;
+            border:1px solid #1b76d1;
+            padding:2% 10% 2% 18%;
+            border-radius:5px;
+        }
+        label{
+            font-weight: bolder;
+            color:rgb(79, 74, 74);
+        }
+        input[type="text"],input[type="password"]{
+            width: 65%;
+            height:40px;
+            font-size: large;
+            outline:none;
+            padding-left:2%;
+            border-radius:5px;
+            border:1px solid #1b76d1;
+        }
+        .captchadiv{
+            background-color: #1b76d1;
+            width: 35%;
+            margin-left:10%;
+            font-size: larger;
+            padding:2%;
+            color:white;
+        }
+        .loginthepra,.stdlogin{
+            font-size:medium;
+            margin-top:2%;
+            border:4px double transparent;
+        }
+        .loginthepra{
+            width:57%;
+        }
+        .reset{
+            background-color:red;
+            width:max-content;
+            border:4px double transparent;
+        }
+        .loginthepra:hover{
+            border:4px double black;
+        }
+        .stdlogin:hover{
+            border:4px double black;
+        }
+        .reset:hover{
+            border:4px double black;
+        }
+        .options{
+            margin:4% 0 2% 10%;
+            display:flex;
+            color:rgb(0, 255, 170);
+        }
+        .forgotpassword{
+            text-decoration: none;
+        }
+        footer{
+            height:85vh;
+            width: 100%;
+            color:gray;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:rgb(237, 233, 198);
+            position:relative;
+        }
+        .fsub1{
+            height:20%;
+            background-color:rgb(237, 233, 198);
+            border-bottom:1px solid rgb(131, 137, 24);
+            padding:1% 0 1% 5%;
+            font-size: larger;
+        }
+        .fsub2{
+            height: 65%;
+            display:flex;
+            flex-wrap: wrap;
+            margin-top:1%;
+            font-size:larger;
+        }
+        .s1{
+            height:33%;
+            min-width:50%;
+            padding:1% 0 1% 5%;
+        }
+        .number{
+            font-size:1rem;
+        }
+        .fsub3{
+            height: 15%;
+            width: 100%;
+            background-color:rgb(225, 215, 125);
+            display:flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+        }
+        #copyright{
+            font-weight: 600;
+            display:flex;
+            font-size:larger;
+            justify-content:center;
+        }
+        #copyimage{
+            height: 85%;
+            width: 12%;
+            margin-left:40%;
+            position: absolute;
+            right:1%;
+        }
+        @media (max-width:500px)
+        {
+            #language{
+            right:1%;
+            height:50%;
+            top:20%;
+            width:20%;
+        }
+        .headerleft{
+            width:75%;
+        }
+        .headerright{
+            height:100%;
+            width: 10%;
+        }
+        .s1{
+            height:10%;
+            min-width:100%;
+        }
+        }
+        @media (min-width:500px) and (max-width:1050px)
+        {
+            .s1{
+                min-width:80%;
+                height:10%;
+            }
+            #language{
+                right:1%;
+                height:50%;
+                top:20%;
+                width:15%;
+            }
+            .headerleft{
+                width:80%;
+            }
+            .headerright{
+                height:100%;
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerleft">  
+            <a class="headercontent imgname" href="https://ssp.postmatric.karnataka.gov.in/">
+                <img class="logo" src="stateEmblem.png.png" alt="">
+                <h2 id="sitename">State Scholarship Portal 2025-26</h2>
+            </a>
+            <a class="headercontent downloadoption" href="https://ssp.postmatric.karnataka.gov.in/2425_sa/Downloads2122.aspx">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                <h4>Download</h4>
+            </a>
+        </div>
+        <div class="headerright">
+            <select name="language" id="language">
+                <option value="Kannada">ಕನ್ನಡ</option>
+                <option value="english">English</option>
+            </select>
+        </div>
+    </header>
+    <div class="login">
+        <h1 id="login">𝓛𝓸𝓰 𝓘𝓷<i class="fa-solid fa-lock"></i></h1>
+    </div>
+    <main>
+       <form action="#">
+           <label for="username">Student Login <br>ವಿದ್ಯಾರ್ಥಿಗಳ ಲಾಗಿನ್</label><br><br><input type="text" name="username" id="username" placeholder="Username"><br><br><br>
+           <label for="password">Password <br>ಪಾಸ್ವರ್ಡ್</label><br><br><input type="password" name="password" id="password" placeholder="Password"><br><br><br>
+           <label for="captcha">Enter Captcha <br> ಕ್ಯಾಫ್ಚಾವನ್ನು ನಮೂದಿಸಿ</label><br><br><input type="text" name="captcha" id="captcha" placeholder="Captcha">
+           <br><br><br>
+           <div class="captchadiv" style="text-align: center;">
+            ThIRu456
+           </div>
+           <div class="captchadiv stdlogin">
+            <p>STUDENT LOGIN</p>
+           </div>
+           <div class="captchadiv loginthepra" style="margin-top:0;">
+            <p>LOGIN THROUGH E-PRAMAAN</p>
+           </div>
+           <div class="captchadiv reset">
+            <p>RESET</p>
+           </div>
+           <a href="https://ssp.postmatric.karnataka.gov.in/post_sa/ResetPassword.aspx" class="forgotpassword">
+            <div class="options">
+            <i class="fa-solid fa-rotate"></i>
+            <h4>Forgot Password <br>ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರುವಿರಾ</h4>
+           </div>
+           </a>
+           <a href="https://ssp.postmatric.karnataka.gov.in/post_sa/Know_Your_Student_ID.aspx" class="forgotpassword"><div class="options">
+            <i class="fa-solid fa-circle-question"></i>
+            <h4>Know your SSP ID <br> ನಿಮ್ಮ ಎಸ್ ಎಸ್ ಪಿ ಐಡಿ ಯನ್ನು ತಿಳಿಯಿರಿ</h4>
+           </div>
+           </a>
+           <a href="https://ssp.postmatric.karnataka.gov.in/post_sa/KnowYourNSP.aspx" class="forgotpassword">
+             <div class="options">
+            <i class="fa-solid fa-circle-question"></i>
+            <h4>Know Your NSP Id <br>ನಿಮ್ಮ ಎನ್ ಎಸ್ ಪಿ ಐಡಿ ಯನ್ನು ತಿಳಿಯಿರಿ</h4>
+           </div>
+           </a>
+       </form>
+    </main>
+    <footer>
+        <div class="fsub1">
+            <h1 style="font-weight:100;">HELPLINE</h1>
+            <p id="helplinenumber"><b style="color:brown;">1902</b> : STATE SCHOLARSHIP PORTAL HELPLINE NUMBER.</p>
+        </div>
+        <div class="fsub2">
+            <div class="fsub2 s1">
+                <p>SOCIAL WELFARE DEPARTMENT<br> <i class="number">9008400010 / 9008400078</i></p>
+            </div>
+            <div class="fsub2 s1">
+                <p>TRIBAL WELFARE DEPARTMENT<br> <i class="number">080-22261789</i></p>
+            </div>
+            <div class="fsub2 s1">
+                <p>DEPARTMENT OF MINORITY WELFARE <br> <i class="number">080-22535931</i></p>
+            </div>
+            <div class="fsub2 s1">
+                <p>BACKWARD CLASSES WELFARE DEPARTMENT<br> <i class="number">080-22374836 / 8050770005</i></p>
+            </div>
+            <div class="fsub2 s1">
+                <p>DEPARTMENT OF AGRILTURE<br> <i class="number">1800-425-3553</i></p>
+            </div>
+        </div>
+        <div class="fsub3">
+            <h3 id="copyright">© 2019 Center for e-Governance - Karnataka State Government.</h3>
+            <img src="https://www.iasgyan.in//ig-uploads/images//image03219.png" alt="" id="copyimage">
+        </div>
+    </footer>
+</body>
+</html>
