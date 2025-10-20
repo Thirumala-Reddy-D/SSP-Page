@@ -1,0 +1,215 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header{
+            position:relative;
+            background-color:#1b76d1;
+            height:10vh;
+            display:flex;
+            width:100%;
+        }
+        .headerleft{
+            height:100%;
+            width: 50%;
+            display:flex;
+        }
+        .headercontent{
+            display:flex;
+            align-items: center;
+            margin-left:5%;
+            text-decoration:none;
+            color:rgb(248, 242, 242);
+        }
+        #sitename{
+            width:500%;
+        }
+        .logo{
+            height:90%;
+            width:20%;
+        }
+        .headerright{
+            height:100%;
+            width: 50%;
+        }
+        #language{
+            position:absolute;
+            right:6%;
+            height:50%;
+            width:7%;
+            margin-top:1.3%;
+            font-size: large;
+            font-weight: 500;
+            background-color: rgb(248, 242, 242);
+            outline:none;
+            border:transparent;
+            border-radius:2px;
+        }
+        .lofin{
+            display:flex;
+        }
+        #login{
+            font-weight: 300;
+            font-size: xxx-large;
+            color:gray;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .fa-lock{
+            font-size: xx-large;
+            color:gray;
+        }
+        main{
+            width:65%;
+            height:200%;
+            margin:2% 10% 2% 18%;
+            border:1px solid #1b76d1;
+            padding:2% 10% 2% 18%;
+            border-radius:5px;
+        }
+        label{
+            font-weight: bolder;
+            color:rgb(79, 74, 74);
+        }
+        input[type="text"],input[type="password"]{
+            width: 65%;
+            height:40px;
+            font-size: large;
+            outline:none;
+            padding-left:2%;
+            border-radius:5px;
+            border:1px solid #1b76d1;
+        }
+        .captchadiv{
+            background-color: #1b76d1;
+            width: 35%;
+            margin-left:10%;
+            font-size: larger;
+            padding:2%;
+            color:white;
+        }
+        .loginthepra,.stdlogin{
+            font-size:medium;
+            margin-top:2%;
+            border:4px double transparent;
+        }
+        .loginthepra{
+            width:57%;
+        }
+        .reset{
+            background-color:red;
+            width:max-content;
+            border:4px double transparent;
+        }
+        .loginthepra:hover{
+            border:4px double black;
+        }
+        .stdlogin:hover{
+            border:4px double black;
+        }
+        .reset:hover{
+            border:4px double black;
+        }
+        .options{
+            margin:4% 0 2% 10%;
+            display:flex;
+            color:rgb(0, 255, 170);
+        }
+        .forgotpassword{
+            text-decoration: none;
+        }
+        footer{
+            height:85vh;
+            width: 100%;
+            color:gray;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:rgb(237, 233, 198);
+            position:relative;
+        }
+        .fsub1{
+            height:20%;
+            background-color:rgb(237, 233, 198);
+            border-bottom:1px solid rgb(131, 137, 24);
+            padding:1% 0 1% 5%;
+            font-size: larger;
+        }
+        .fsub2{
+            height: 65%;
+            display:flex;
+            flex-wrap: wrap;
+            margin-top:1%;
+            font-size:larger;
+        }
+        .s1{
+            height:33%;
+            min-width:50%;
+            padding:1% 0 1% 5%;
+        }
+        .number{
+            font-size:1rem;
+        }
+        .fsub3{
+            height: 15%;
+            width: 100%;
+            background-color:rgb(225, 215, 125);
+            display:flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+        }
+        #copyright{
+            font-weight: 600;
+            display:flex;
+            font-size:larger;
+            justify-content:center;
+        }
+        #copyimage{
+            height: 85%;
+            width: 12%;
+            margin-left:40%;
+            position: absolute;
+            right:1%;
+        }
+        @media (max-width:500px)
+        {
+            #language{
+            right:1%;
+            height:50%;
+            top:20%;
+            width:20%;
+        }
+        .headerleft{
+            width:75%;
+        }
+        .headerright{
+            height:100%;
+            width: 10%;
+        }
+        .s1{
+            height:10%;
+            min-width:100%;
+        }
+        }
+        @media (min-width:500px) and (max-width:1050px)
+        {
+            .s1{
+                min-width:80%;
+                height:10%;
+            }
+            #language{
+                right:1%;
+                height:50%;
+                top:20%;
+                width:15%;
+            }
+            .headerleft{
+                width:80%;
+            }
+            .headerright{
+                height:100%;
+                width: 20%;
+            }
+        }
